@@ -1,0 +1,226 @@
+.eventBtn {
+  display: none;
+}
+
+.robowar {
+  background-image: url("../../images/event1bg.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.resq {
+  background-position: center;
+  background-size: contain;
+}
+
+.tractical {
+  background-image: url("../../images/event4bg.jpg");
+  background-size: cover;
+}
+
+
+.body {
+  overflow: hidden;
+  background-position: fixed;
+  background: fixed;
+}
+
+.Event_wrapper {
+  display: grid;
+  grid-template-columns: 20% auto;
+  width: 100%;
+  height: 100%;
+  transform: scale(0.9);
+}
+
+
+.onlyImg {
+  display: none;
+}
+
+.Event {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-image: url("https://tenor.com/view/titan-fall2-robot-fight-gif-13432424 ");
+}
+
+
+
+.EventTitle {
+  font-family: designer;
+  font-size: 34px;
+  line-height: 40px;
+  letter-spacing: 0.085em;
+  text-align: left;
+  text-transform: uppercase;
+  padding-bottom: 1rem;
+  border-bottom: 5px solid white;
+  margin-bottom: 1rem;
+}
+
+.Event p {
+  font-family: bankGothlic;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: bold;
+  text-align: left;
+  z-index: 3;
+}
+
+.action_btn {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.Event-content {
+  backdrop-filter: blur(2px) saturate(100%);
+  -webkit-backdrop-filter: blur(2px) saturate(100%);
+  background-color: rgba(17, 25, 40, 0.11);
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.125);
+  padding: 2rem;
+  transform: scale(1.1);
+  box-shadow: 2px 2px 25px rgba(0, 224, 255, 1);
+  animation-name: eventContent;
+  animation-duration: 1s;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
+}
+
+
+/* @media screen and (min-width: 621px) {
+  
+} */
+
+@media only screen and (max-width: 620px) {
+  .Event {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    top: 2rem;
+  }
+
+  .eventBtn {
+    position: absolute;
+    top: 3rem;
+    color: aqua;
+    background-color: black;
+    font-family: mokoto;
+    padding: 5px;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    cursor: pointer;
+    display: block;
+  }
+
+
+  .body {
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+  }
+
+  .Event img {
+    position: absolute;
+    top: 10rem;
+    z-index: -1;
+    left: 0rem;
+    display: none;
+  }
+
+  .Event_wrapper {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+
+  /* .EventMenu {
+    display: none;
+  } */
+  .Event_Menu {
+    display: block;
+    z-index: 999;
+  }
+
+  .EventTitle {
+    font-size: 28px;
+    line-height: 2rem;
+    letter-spacing: 0;
+  }
+
+  .Event p {
+    font-size: 18px;
+    font-weight: bolder;
+  }
+
+  .Event-content {
+    margin-top: 1rem;
+    width: 90%;
+    height: 80%;
+    /* backdrop-filter: blur(6px) saturate(10%);
+    -webkit-backdrop-filter: blur(5px) saturate(0%); */
+    /* Set height to 100% */
+    backdrop-filter: blur(0px) saturate(200%);
+    -webkit-backdrop-filter: blur(0px) saturate(200%);
+    background-color: rgba(17, 25, 40, 0.25);
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.125);
+    position: relative;
+
+  }
+
+
+  .action_btn {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    gap: 2rem;
+    margin-bottom: 2rem;
+    transform: scale(1.2);
+  }
+}
+
+
+@media screen and (max-width:1050px) and (min-width:620px) {
+  .Event_wrapper {
+    display: grid;
+    grid-template-columns: 30% 70%;
+  }
+
+  .Event-content {
+    width: 70vw;
+    height: auto;
+  }
+
+  .Event img {
+    position: absolute;
+    top: 30%;
+    left: 40%;
+    z-index: -1;
+  }
+
+  .EventTitle {
+    font-size: 32px;
+  }
+
+
+}
+
+@keyframes eventContent {
+  from {
+    transform: scale(1);
+  }
+
+  to {
+    transform: scale(1.1);
+  }
+}

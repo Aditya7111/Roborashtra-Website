@@ -1,0 +1,364 @@
+.card-container {
+  width: 320px;
+  height: 215px;
+}
+
+.Card {
+  font-family: Roboto;
+  width: 318px;
+  height: 213px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  position: relative;
+  isolation: isolate;
+  clip-path: polygon(50% 0%, 100% 0, 100% 74%, 78% 100%, 0 100%, 0% 60%, 0 0);
+  color: white;
+  margin-bottom: 2rem;
+  -webkit-transition: all 500ms ease;
+  -moz-transition: all 500ms ease;
+  -ms-transition: all 500ms ease;
+  -o-transition: all 500ms ease;
+  transition: all 1s ease;
+  cursor: pointer;
+
+}
+
+.before-element {
+  inset: 2px;
+  position: absolute;
+  z-index: -1;
+  clip-path: polygon(50% 0%, 100% 0, 100% 74%, 78% 100%, 0 100%, 0% 60%, 0 0);
+}
+
+.before-element img {
+  width: 317px;
+  height: 213px;
+  transition: all ease-in-out 1s;
+
+}
+
+.headDesc h1 {
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 38.46px;
+  letter-spacing: 4%;
+  padding: 1rem 0 1rem 0;
+
+}
+
+.headDesc {
+  position: absolute;
+  bottom: 2px;
+  padding-left: 15px;
+  height: 30%;
+  width: 100%;
+  text-align: left;
+  /*background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #000000 99.48%);*/
+  transition: all ease-in-out 1s;
+  background-color: rgba(0, 0, 0, 0.5);
+
+}
+
+.headDesc a {
+  cursor: pointer;
+  color: blue;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.desc {
+  padding-right: 1rem;
+  font-size: large;
+}
+
+.desc a {
+  display: block;
+  padding: 1rem 0;
+}
+
+/* .Card:hover {
+  .headDesc {
+    position: absolute;
+    bottom: 0%;
+    transition: all ease-in-out 0.3s;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    border: 4px solid white;
+  }
+
+  background-color: rgb(246, 247, 243);
+
+
+
+  .before-element img {
+    filter: blur(2px);
+    -webkit-filter: blur(2px);
+  }
+} */
+
+.card-container:hover {
+
+  .Card {
+    transform: rotateY(180deg);
+  }
+
+  .headDesc {
+    position: absolute;
+    bottom: 0%;
+    height: 100%;
+    border: 4px solid white;
+    transform: rotateY(180deg);
+
+  }
+
+}
+
+.desc button {
+  margin-top: 1rem;
+  margin-left: .5rem;
+}
+
+
+@keyframes imageUp {
+  0% {
+    bottom: -40%;
+  }
+
+  100% {
+    bottom: 0;
+  }
+}
+
+@media screen and (max-width: 920px) {
+  .Card {
+    width: 306px;
+    height: 201px;
+  }
+
+  .desc button {
+    margin-top: 0rem;
+  }
+}
+
+.card-container {
+  width: 320px;
+  height: 215px;
+}
+
+.Card {
+  background-color: rgba(0, 224, 255, 1);
+  font-family: designer;
+  width: 318px;
+  height: 213px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  position: relative;
+  isolation: isolate;
+  clip-path: polygon(50% 0%, 100% 0, 100% 74%, 78% 100%, 0 100%, 0% 60%, 0 0);
+  color: white;
+  margin-bottom: 2rem;
+  -webkit-transition: all 500ms ease;
+  -moz-transition: all 500ms ease;
+  -ms-transition: all 500ms ease;
+  -o-transition: all 500ms ease;
+  transition: all 1s ease;
+  cursor: pointer;
+
+}
+
+.before-element {
+  inset: 2px;
+  position: absolute;
+  z-index: -1;
+  clip-path: polygon(50% 0%, 100% 0, 100% 74%, 78% 100%, 0 100%, 0% 60%, 0 0);
+}
+
+.before-element img {
+  width: 317px;
+  height: 213px;
+  transition: all ease-in-out 1s;
+
+}
+
+.headDesc h1 {
+  font-size: 22px;
+  font-weight: 100;
+  line-height: 28.46px;
+  letter-spacing: 0;
+  padding: 1rem 0 1rem 0;
+
+}
+
+.headDesc {
+  position: absolute;
+  bottom: 1px;
+  padding-left: 15px;
+  height: 30%;
+  width: 100%;
+  text-align: left;
+  /*background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #000000 99.48%);*/
+  transition: all ease-in-out 1s;
+  background-color: rgba(0, 0, 0, 0.5);
+
+}
+
+.headDesc a {
+  cursor: pointer;
+  color: blue;
+  text-decoration: none;
+}
+
+.desc {
+  padding-right: 1rem;
+  font-size: 18px;
+  font-family: bankGothlic;
+  font-weight: bolder;
+}
+
+.desc a {
+  display: block;
+  padding: 1rem 0;
+  font-family: mortend;
+}
+
+/* .Card:hover {
+  .headDesc {
+    position: absolute;
+    bottom: 0%;
+    transition: all ease-in-out 0.3s;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    border: 4px solid white;
+  }
+
+  background-color: rgb(246, 247, 243);
+
+
+
+  .before-element img {
+    filter: blur(2px);
+    -webkit-filter: blur(2px);
+  }
+} */
+
+.card-container:hover {
+
+  .Card {
+    transform: rotateY(180deg);
+  }
+
+  .headDesc {
+    position: absolute;
+    bottom: 0%;
+    height: 100%;
+    border: 4px solid white;
+    transform: rotateY(180deg);
+
+  }
+
+}
+
+.desc button {
+  margin: 1rem;
+}
+
+/*Bottom Image */
+
+.bottom-container {
+  position: absolute;
+  bottom: 0;
+  left: 0px;
+  animation-name: imageUp;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
+  overflow: hidden;
+}
+
+.text-bar {
+  position: absolute;
+  width: 385px;
+  height: 200px;
+  bottom: 50px;
+  left: 237px;
+  clip-path: polygon(46% 35%,
+      61% 35%,
+      100% 35%,
+      100% 61%,
+      23% 61%,
+      3% 75%,
+      11% 61%,
+      0 60%,
+      0 35%,
+      39% 35%);
+  background: rgba(217, 217, 217, 0.2);
+  color: black;
+  animation-name: imageUp;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
+  animation-delay: 0.2s;
+  overflow: hidden;
+}
+
+.text {
+  position: absolute;
+  font-size: 19px;
+  text-align: center;
+  width: 100%;
+  padding-left: 15px;
+  bottom: 75px;
+  color: white;
+}
+
+@keyframes imageUp {
+  0% {
+    bottom: -40%;
+  }
+
+  100% {
+    bottom: 0;
+  }
+}
+
+/* The typing effect */
+@keyframes typing {
+  from {
+    width: 0;
+  }
+
+  to {
+    width: 80%;
+  }
+}
+
+/*Responsive ness*/
+@media (max-width: 650px) {
+  .Card {
+    margin: 1rem auto;
+  }
+
+  .headDesc h1 {
+    font-size: 22px;
+  }
+
+  body {
+    overflow-y: scroll;
+  }
+
+  .desc a {
+    margin-bottom: 2rem;
+    margin-left: 1rem;
+  }
+}
+
+@media screen and (max-width: 920px) {
+  .Card {
+    width: 306px;
+    height: 201px;
+  }
+
+  .desc button {
+    margin-left: 0.5rem;
+  }
+}

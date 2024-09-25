@@ -1,0 +1,132 @@
+.Menu_wrapper {
+  max-width: min(72rem, 98%);
+  margin: 0 auto;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr 0.4fr;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+.popUp {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 999;
+  background-color: rgba(0, 0, 0, 0.805);
+  left: 0;
+  top: 0;
+  display: grid;
+  place-items: center;
+}
+
+.closeBtn {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  font-size: 26px;
+  color: aquamarine;
+  cursor: pointer;
+}
+
+.popUp img {
+  position: absolute;
+  top: 2rem;
+  height: 90%;
+  width: 35%;
+}
+
+@media only screen and (max-width: 650px) {
+  .Menu_wrapper {
+    grid-template-columns: 1fr;
+  }
+
+  .popUp img {
+    width: 100%;
+    height: 30%;
+  }
+
+  .Menu_bar {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 920px) {
+  .Menu_bar {
+    display: none;
+  }
+
+  .popUp img {
+    width: 70%;
+    height: 90%;
+  }
+
+  .menu_nav {
+    display: flex;
+  }
+
+  .Menu_wrapper {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: 1fr;
+  }
+}
+
+
+
+
+
+
+
+.bell {
+  width: 2rem;
+    animation: bellshake .5s cubic-bezier(.36,.07,.19,.97) infinite;
+    backface-visibility: hidden;
+    transform-origin: top right;
+}
+
+@keyframes bellshake {
+  0% { transform: rotate(0); }
+  15% { transform: rotate(5deg); }
+  30% { transform: rotate(-5deg); }
+  45% { transform: rotate(4deg); }
+  60% { transform: rotate(-4deg); }
+  75% { transform: rotate(2deg); }
+  85% { transform: rotate(-2deg); }
+  92% { transform: rotate(1deg); }
+  100% { transform: rotate(0); }
+}
+
+
+
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+
+.wrapper {
+  display: flex;
+  width: 10%;
+  height: 10vh;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  /* margin-top: 40%; */
+  cursor: pointer;
+}
+
+.title {
+  font-family: "poppins", sans-serif;
+  font-size: 1.4rem;
+  font-weight: 500;
+  margin: 0;
+  line-height: 1;
+}
+
+.description {
+  font-family: "poppins", sans-serif;
+  font-size: 1rem;
+  font-weight: 300;
+  margin-top: 0;
+  margin-bottom: 3rem;
+  color: #666;
+}

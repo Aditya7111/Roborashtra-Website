@@ -1,0 +1,516 @@
+body {
+  overflow: hidden;
+}
+
+.startPage {
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  background-size: cover;
+
+}
+
+.logo {
+  width: 10rem;
+  height: 10rem;
+  position: absolute;
+  top: calc(50% - 5rem);
+  left: calc(50% - 5rem);
+  z-index: 0;
+}
+
+
+.startTitle {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  z-index: 2;
+}
+
+.startTitle span {
+  z-index: 2;
+}
+
+.startTitle {
+  width: 100%;
+  height: 100%;
+  font-size: 120px;
+  text-align: center;
+  font-weight: bold;
+  font-family: mokoto;
+  overflow: hidden;
+  white-space: nowrap;
+  margin: 0 auto;
+  letter-spacing: .15em;
+  animation: animated-text 4s 1s normal ease-in-out both
+}
+
+@keyframes animated-text {
+  from {
+    width: 0;
+  }
+
+  to {
+    width: 100%;
+  }
+}
+
+
+main {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #000000 99.48%);
+  overflow: hidden;
+}
+
+.clgLogo img {
+  width: 7rem;
+  height: 7rem;
+  position: absolute;
+}
+
+.clgLogo img:nth-child(1) {
+  left: 1rem;
+  top: 1rem;
+}
+
+.clgLogo img:nth-child(2) {
+  right: 1rem;
+  top: 1rem;
+}
+
+.clgName {
+  display: flex;
+  position: relative;
+  top: 2rem;
+  letter-spacing: 0.25rem;
+  justify-content: space-between;
+  font-size: 28px;
+  font-family: bankGothlic;
+}
+
+.clgName p:nth-child(1) {
+  padding-bottom: 1rem;
+  font-family: mokoto;
+}
+
+main {
+  position: absolute;
+  padding-top: 3rem;
+}
+
+.main_bottom {
+  width: 100%;
+  position: absolute;
+  bottom: 1rem;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #000000 99.48%);
+}
+
+.main_bottom p {
+  font-family: bankGothlic;
+  font-size: 32px;
+  font-weight: 400;
+  /* line-height: 83px; */
+  letter-spacing: 0em;
+  text-align: center;
+  /* background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #000000 99.48%); */
+  padding: 2rem;
+}
+
+.main_title {
+  font-family: mokoto;
+  font-size: 118px;
+  font-weight: 100;
+  line-height: 248px;
+  letter-spacing: 0em;
+  text-align: left;
+  position: absolute;
+  top: 30%;
+  left: 53%;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+}
+
+.main_title {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 11rem;
+  margin-left: 45px;
+}
+
+.colaboration {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  position: absolute;
+  top: 15rem;
+  left: 2rem;
+}
+
+.colaboration h3 {
+  font-size: 18px;
+  font-family: bankGothlic;
+}
+
+.DRDOlogo {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.DRDOlogo img {
+  width: 120px;
+  height: 120px;
+}
+
+main img {
+  width: 100%;
+  margin-bottom: 12rem;
+  position: relative;
+  left: -4rem;
+  /* margin-left: 4rem; */
+}
+
+/* .color-dots {
+  width: 1rem;
+  height: 1rem;
+  border-radius: 50%;
+  background-color: red;
+  position: absolute;
+  top: 20%;
+  left: 50%;
+}
+
+.color-dots:nth-child(3) {
+  position: absolute;
+  animation: dot1 infinite 3s ease-in-out;
+  left: 60%;
+  background-color: blue;
+  box-shadow: -12px 2px 15px rgb(43, 0, 255);
+}
+
+.color-dots:nth-child(2) {
+  position: absolute;
+  left: 30%;
+  background-color: aqua;
+  box-shadow: 12px 12px 10px rgba(0, 255, 255, 0.366);
+
+}
+
+@keyframes dot1 {
+  0% {
+    position: absolute;
+    top: 30%;
+    left: 30%;
+  }
+
+  30% {
+    position: absolute;
+    top: 45%;
+    left: 50%;
+  }
+
+  50% {
+    position: absolute;
+    top: 60%;
+    left: 75%;
+  }
+
+  80% {
+    position: absolute;
+    z-index: -1;
+    top: 45%;
+    left: 50%;
+  }
+
+  100% {
+    position: absolute;
+    top: 30%;
+    left: 30%;
+  }
+} */
+
+
+.start_btn {
+  transform: translate(-10%, 0%);
+  margin-bottom: .5rem;
+}
+
+.nav_wrapper {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+}
+
+.drone img {
+  width: 10rem;
+  height: 10rem;
+  animation: drone 4s ease-in-out forwards;
+  position: absolute;
+  bottom: 1%;
+  right: 1%;
+}
+
+@keyframes drone {
+  10% {
+    position: absolute;
+    bottom: 10%;
+    right: 1%;
+    transform: rotate(-15deg);
+  }
+
+  25% {
+    position: absolute;
+    bottom: 25%;
+    right: 1%;
+    transform: rotate(0deg);
+  }
+
+  40% {
+    position: absolute;
+    bottom: 50%;
+    right: 1%;
+    transform: rotate(-45deg);
+  }
+
+  60% {
+    position: absolute;
+    bottom: 50%;
+    right: 10%;
+  }
+
+  90% {
+    position: absolute;
+    bottom: 65%;
+    right: 13%;
+  }
+
+  100% {
+    position: absolute;
+    bottom: 60%;
+    right: 10%;
+    transform: rotateZ(-30deg);
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .logo {
+    width: 5rem;
+    height: 5rem;
+    position: absolute;
+    top: calc(50% - 2.5rem);
+    left: calc(50% - 2.5rem);
+  }
+
+
+  .startTitle {
+    font-size: 38px;
+
+  }
+
+  .clgLogo img {
+    width: 3rem;
+    height: 3rem;
+    position: absolute;
+  }
+
+  .clgLogo img:nth-child(1) {
+    left: 3rem;
+    top: 6rem;
+  }
+
+  .clgLogo img:nth-child(2) {
+    right: 3rem;
+    top: 6rem;
+  }
+
+  .clgName p {
+    font-size: 16px;
+    margin: 1px;
+  }
+
+  .wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+
+  }
+
+  .main_title {
+    font-size: 42px;
+    top: 14%;
+    gap: 0rem;
+    margin-left: 0px;
+  }
+
+  .main_bottom p {
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 0rem;
+  }
+
+  main img {
+    width: 75vw;
+    margin-bottom: 10rem;
+    position: relative;
+    left: 0rem;
+    top: -1rem;
+  }
+
+  .drone img {
+    width: 7rem;
+    height: 7rem;
+  }
+
+  .start_btn {
+    transform: translate(0%, 0%);
+    margin-bottom: 7rem;
+  }
+
+  .nav_wrapper {
+    position: static;
+    width: auto;
+    height: auto;
+  }
+
+  body {
+    overflow: hidden;
+  }
+
+  .prizePool {
+    display: none;
+  }
+
+
+}
+
+@media screen and (max-width:380px) {
+  .start_btn {
+    margin-bottom: 2rem;
+  }
+
+  .clgName p {
+    font-size: 10px;
+  }
+
+  .main_title {
+    font-size: 34px;
+  }
+
+  .main img {
+    position: relative;
+    top: -2rem;
+  }
+
+  .main_bottom p {
+    font-size: 12px;
+  }
+
+  .prizePool {
+    display: none;
+  }
+}
+
+@media only screen and (min-width:501px) and (max-width: 950px) {
+  .startTitle {
+    font-size: 72px;
+  }
+
+  .start_btn {
+    margin-bottom: 6rem;
+  }
+
+  .clgLogo img:nth-child(1) {
+    left: 1rem;
+    top: 5rem;
+  }
+
+  .clgLogo img:nth-child(2) {
+    right: 1rem;
+    top: 5rem;
+  }
+
+  .clgName {
+    margin-left: 2rem;
+    margin-right: 2rem;
+  }
+
+  body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background-size: cover;
+  }
+
+  .main_title {
+    font-size: 4rem;
+    text-align: center;
+    gap: 10rem;
+    position: absolute;
+    left: 24rem;
+    margin-top: 2rem;
+  }
+
+  main img {
+    margin-bottom: 13rem;
+    width: 45vw;
+    position: relative;
+    left: -3.5rem;
+  }
+
+  .prizePool {
+    display: none;
+  }
+
+}
+
+@media screen and (min-width:951px) and (max-width:1200px) {
+  .clgName p {
+    font-size: 34px;
+    position: relative;
+    top: 2%;
+    margin-left: 4rem;
+    margin-right: 4rem;
+  }
+
+  .startTitle {
+    font-size: 84px;
+  }
+
+  main img {
+    margin-bottom: 12rem;
+    width: 45vw;
+  }
+
+  .main_title {
+    font-size: 6rem;
+    gap: 10rem;
+    margin-top: 5.5rem;
+  }
+
+  .start_btn {
+    margin-bottom: 7rem;
+  }
+
+  .main_bottom {
+    height: 27%;
+  }
+
+
+}

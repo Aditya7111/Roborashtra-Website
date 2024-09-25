@@ -1,0 +1,128 @@
+.team h2 {
+  font-family: mokoto;
+  font-size: 32px;
+  font-weight: 500;
+  text-decoration: underline;
+  text-decoration-color: #00e0ff;
+  line-height: 38px;
+  letter-spacing: 0.015em;
+  text-align: center;
+  margin: 2rem 0;
+}
+
+.team {
+  width: 125vw;
+  position: relative;
+  top: -2rem;
+
+}
+
+.team_wrapper {
+  width: 100vw;
+  right: -19rem;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  position: relative;
+  top: -6rem;
+  margin-bottom: 1rem;
+}
+
+.team_row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  box-shadow: #f5f5f5;
+  font-size: 16px;
+  gap: 6rem;
+}
+
+
+
+.team_wrapper::-webkit-scrollbar {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 10px;
+  background-color: #f5f5f5;
+}
+
+.team_wrapper::-webkit-scrollbar-thumb {
+  background-color: #00e0ff;
+}
+
+
+
+
+
+
+
+.team_row :hover {
+  cursor: pointer;
+  transform: scale(1);
+
+  transition: transform 0.8s, scale 0.5s;
+  transform-origin: center;
+  transform: scale(1);
+}
+
+
+
+
+@keyframes glow {
+  from {
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
+  }
+
+  to {
+    box-shadow: 0 0 20px 10px rgba(255, 255, 255, 0.8);
+  }
+}
+
+.team {
+  margin: 10% 3%;
+}
+
+@media screen and (max-width:650px) {
+  .team {
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    top: 0rem;
+  }
+
+  .team_wrapper {
+    position: relative;
+    right: 0;
+    top: 0;
+  }
+
+  .team h2 {
+    font-size: 24px;
+  }
+
+  .team_row {
+    gap: 2rem;
+    margin-right: 1rem;
+  }
+}
+
+@media screen and (max-width: 920px) {
+  .team {
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    top: 0rem;
+  }
+
+  .team_wrapper {
+    position: relative;
+    right: 0;
+    font-size: 26px;
+    top: 0;
+  }
+
+  .team_row {
+    margin-right: 2rem;
+  }
+}

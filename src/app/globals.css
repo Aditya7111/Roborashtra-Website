@@ -1,0 +1,64 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url("https://fonts.googleapis.com/css2?family=Carrois+Gothic+SC&family=Inknut+Antiqua&family=Roboto:wght@400;700&display=swap");
+@import url("https://www.freepik.com/font/mokoto");
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+}
+
+@font-face {
+  font-family: bankGothlic;
+  src: url(../../public/BankGothic\ Regular.ttf);
+}
+
+@font-face {
+  font-family: designer;
+  src: url(../../public/Designer.otf);
+}
+
+@font-face {
+  font-family: mokoto;
+  src: url(../../public/Mokoto\ Demo.ttf);
+}
+
+@font-face {
+  font-family: mortend;
+  src: url(../../public/Mortend\ Bold.ttf);
+}
+
+@font-face {
+  font-family: shapeSpace;
+  src: url(../../public/Square\ Space.ttf);
+}
+
+:root {
+  --ft-car: "Carrois Gothic SC", sans-serif;
+  --ft-ink: "Inknut Antiqua", serif;
+  --ft-robo: "Roboto", sans-serif;
+
+}
+
+body {
+  background: url("../images/body-bg.jpg");
+  color: white;
+  overflow-x: hidden;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-color: rgb(0, 0, 5);
+  background-attachment: fixed;
+}
+
+.center-width {
+  max-width: min(72rem, 96%);
+  margin: 0 auto;
+}
